@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <title>Les conditions avec l'operateur logiques en javascript : if elseif avec et/ou</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1>Les conditions avec l'operateur logiques en javascript : if elseif avec et/ou</h1>
+
+            <script>
+                var heure = 26;
+                var x = 6, y = "hhhhh";
+ 
+                if ( heure >= 0 && heure < 12 == true) {
+                alert("C'est le matin");
+                }
+                else if (heure === 12 == true) {
+                alert("Il est midi pile");                    
+                }
+                else if ( heure > 12 && heure <= 24 == true) {
+                alert("C'est l'apres midi ou le soir");                                        
+                }
+                else{
+                alert("La valeur entree ne semble pas valide");                    
+                }
+
+//----------------------------------------------------------------------------------------------------                
+
+                if (heure < 0 || heure > 24 == true) {
+                        alert("La valeur est valide");
+                } else {
+                        alert("la valeur n'est pas valide");
+                }
+
+//----------------------------------------------------------------------------------------------------
+
+                if (!(heure <= 16) == true) {
+                        alert("il est plus de 16h");
+                } else {
+                        alert("il est mois de 16h");
+                }   
+
+//---------------------------------------------------------------------------------------------------
+
+                if (x) {
+                       alert("x est evaluee a true par le javascript"); 
+                }
+
+                if (y) {
+                       alert("y est evaluee a true");                         
+                } else {
+                       alert("y est evaluee a flase");                                                 
+                }
+
+            </script>
+            
+            
+    </body>  
+</html>

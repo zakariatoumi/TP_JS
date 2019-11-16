@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>les tableaux en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1>les tableaux en javascript</h1>
+            <p id="demo"></p>
+
+            <script>
+                  
+                  /*var prenoms = ["zakaria", "yassine", "mehdi", "oussama"];
+                  var element;*/
+
+                  //prenoms[3] = "anass"
+
+                  //alert(prenoms[3]);
+
+                  //alert("Notre tableaux contient : " + prenoms.length + " elements");
+
+                  /*prenoms[prenoms.length] = "mustafa";
+                  prenoms[prenoms.length] = "omar";
+
+                  alert("On a ajouté " + prenoms[4] + " et " + prenoms[5]);*/
+
+                  /* element = "<ul>";
+                  for (var i = 0; i < prenoms.length; i++) {
+                      
+                    element += "<li>" + prenoms[i];
+                                      
+                      
+                  }
+                  element += "</ul>";
+                  
+                  document.getElementById("demo").innerHTML = element;*/
+
+
+                  var prenoms = {
+                        prenom1 : "zakaria",
+                        prenom2 : "anass",
+                        prenom3 : "hamza",
+                        prenom4 : "marwane"
+                  }, p = "";
+
+                  //alert(prenoms.prenom4);
+
+                  for (var clesf in prenoms) {
+                      p+= clesf + ' : ' + prenoms[clesf] + '\n';
+                  }
+
+                  alert(p);
+
+            </script>
+            
+            
+    </body>  
+</html>

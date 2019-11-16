@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>les objets en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1>les objets javascript</h1>
+
+            <script>
+                
+           var texte = "J'habite a casablanca";
+
+           var pos0 = texte.charAt(0);
+           var pos2 = texte.charAt(2);
+           var pos6 = texte.charAt(6);
+
+           alert("pos0 est : " + pos0 +
+                 "\npos2 est : " + pos2 +
+                 "\npos6 est : " + pos6);
+
+//-------------------------------------------------------------------------------------
+
+           var texte1 = "                 J'apprends le JAVASCRIPT                  ";
+
+           /*var premiere = texte1.indexOf('J', 1);     
+           var dernier = texte1.lastIndexOf('p');     
+           var sequece = texte1.indexOf('le');
+
+           alert("premiere est : " + premiere +
+                 "\ndernier est : " + dernier +
+                 "\nsequece est : " + sequece);  */
+
+                 //alert(texte1.replace("JAVASCRIPT", "PHP"));
+
+                /* var texteTronque = texte1.slice(0, 10);
+                 var texteTronque1 = texte1.slice(-11, -1);
+
+                 alert(texteTronque);   
+                 alert(texteTronque1);*/
+
+                 var textenettoye = texte1.trim();
+                 alert("texte n'est pas nettoye : " + texte1 + 
+                        "\ntexte nettoye : " + textenettoye
+                 );   
+
+            </script>
+            
+            
+    </body>  
+</html>

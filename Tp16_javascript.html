@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>les objets en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1>les objets javascript</h1>
+
+            <script>
+                
+              /*var obj_string = new String("Je suis un chaine de caractere");
+              var obj_objet = new Object();
+
+              obj_objet.nom = "toumi";
+              obj_objet.prenom = "zakaria";
+              obj_objet.age = 25;
+
+              alert(obj_objet.nom);*/
+
+//--------------------------------------------------------------------------------------------              
+
+              /*var moi = {
+                  nom : "toumi",
+                  prenom : "zakaria",
+                  age : 25,
+
+                  id : function () {
+                      return moi.nom + ' ' + moi.prenom;
+                  }
+              };
+
+              alert(moi.id());*/
+
+//---------------------------------------------------------------------------------------------
+
+              function Identite(p, n, a) {
+                  this.nom = n;
+                  this.prenom = p;
+                  this.age = a;
+              }
+
+              var personne1 = new Identite("toumi", "zakaria", 25);
+              var personne2 = new Identite("bouri", "mustafa", 24);
+              var personne3 = personne1;
+              personne3.prenom = "yassine";
+
+              alert("le prenom de personne1 est : " + personne1.prenom +
+                    "\nle prenom de personne3 est : " + personne3.prenom);
+              
+              alert("Age de personne numero 1 : " + personne1.age +
+                    "\n Age de presonne numero 2 : " + personne2.age);
+
+            </script>
+            
+            
+    </body>  
+</html>
