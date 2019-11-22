@@ -11,7 +11,92 @@
 
             <script>
                   
-            
+            var table = ['Zakaria', 'Aziz', 'Younase', 'Sallah'], p = '';
+
+            /*var taille = table.push('yassine', 'mehdi');
+
+            for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+            }
+
+            alert("la table contient : " + taille + " element : " + "\n\n" + p );*/
+
+//-----------------------------------------------------------------------------------------
+
+                /*var taille1 = table.pop();
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert(p + "\n\n Nous avons supprimer l'element : " + taille1);*/
+
+//------------------------------------------------------------------------------------------
+                /*var taille1 = table.unshift('yassine', 'mehdi');
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table contient : " + taille1 + " element : " + "\n\n" + p );*/
+
+//----------------------------------------------------------------------------------------                
+
+               /* table.splice(1,0,"Anass","Moad");
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table contient des valeurs suivants : \n" + p);*/
+
+//----------------------------------------------------------------------------------------
+
+                /*table.splice(0,3);
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table contient des valeurs suivants : \n" + p);*/
+
+//-----------------------------------------------------------------------------------------
+
+                /*table.sort();
+                table.reverse();
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table contient des valeurs suivants : \n" + p);*/
+
+//-----------------------------------------------------------------------------------------
+
+                /*var chaine = table.join('/');
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table contient des valeurs suivants : \n" + p + 
+                        "\n\n La chaine renvoyer par le join() : " + chaine);*/
+
+//----------------------------------------------------------------------------------------
+
+                /*var garcons = table.slice(0,2);
+                for (var i = 0;i < table.length ;i++) {
+                     p += 'le prenom N° ' + (i+1) + ' element : ' + table[i] + '\n';
+                }
+
+                alert("la table de base : \n" + p + 
+                        "\n\n Le table cree par slice() : " + garcons);*/
+
+//----------------------------------------------------------------------------------------
+                var garcons = ['zakaria', 'mohamed', 'youssef'];
+                var filles = ['fatima', 'aicha'];
+                var animaux = ['animal', 'mouton'];
+                var fusion = garcons.concat(filles,animaux);
+               
+
+                alert("Fusion est : " + fusion
+                );
+
+
 
             </script>
             
