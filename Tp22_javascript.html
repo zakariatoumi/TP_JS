@@ -1,19 +1,54 @@
 <html>
  <head>
-  <title>L'objet math et ses methodes</title>
+  <title>L'objet date en javascript</title>
   <meta charset="utf-8">
   
  </head>
     <body>
-            <h1>L'objet math et ses methodes</h1>
+            <h1>L'objet date en javascript</h1>
 
             <script>
                 
-               var x = Math.random()*1000;
-               var y = Math.random()*1000;
+             var d = new Date();
 
-               alert("contenu de x : " + x + 
-                    "\ncontenu de y : " + y);
+             /*var dms = d.getTime();
+             var dy = d.getFullYear();
+             var dmo = d.getMonth() + 1;
+             var ddate = d.getDate();
+             var dday = d.getDay();
+
+             var dh = d.getHours();
+             var dmi = d.getMinutes();
+             var ds = d.getSeconds();
+             var dMs = d.getMilliseconds();
+
+             alert('Nous somme le : ' + ddate + '/' + dmo + '/' + dy +
+                    '\n Il est acctuallement : ' + dh + ':' + dmi + ':' + ds + ':' + dMs);*/
+
+//----------------------------------------------------------------------------------------------
+
+                /*d.setFullYear(2015,5,15);
+                d.setHours(12);
+                d.setMinutes(30);
+                d.setSeconds(15);
+
+                alert('Date definie : ' + d);*/
+
+//-------------------------------------------------------------------------------------------------
+
+                var dy = d.getFullYear();
+                var dmo = d.getMonth();
+                var dday = d.getDay();
+                var ddate = d.getDate();
+                var dh = d.getHours();
+                var dmi = d.getMinutes();
+                var ds = d.getSeconds();
+
+                var mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'];
+                var jours = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+
+                alert('Le ' + jours[dday] + ' ' + ddate + ' ' + mois[dmo] + ' ' + dy +
+                        '.\n Il est : ' + dh +'h' + dmi + 'mn et' + ds +'s.' );
 
             </script>
             
