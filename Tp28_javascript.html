@@ -1,0 +1,53 @@
+<html>
+ <head>
+  <title>Decovrerter le DOM HTML</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1 id="titre">Decovrerter le DOM HTML</h1>
+            <p class="para">Du texte et <a href="https://www.youtube.com/?gl=MA&hl=fr">Un lien</a></p>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum hic</p>
+
+            <script>
+
+                /*var tableau = document.getElementById('titre');
+                alert(tableau);*/
+
+                /*var tableau = document.getElementsByTagName('p');
+                alert(tableau.length);*/
+
+                /*var tableau = document.getElementsByClassName('para');
+                alert('Notre page contient : ' + tableau.length + ' paragraphe portant la classe para');*/
+
+               /* var lien = document.querySelector('p a');
+                var p = document.querySelectorAll('.para');
+
+                alert("le lien est : " + lien + 
+                    "\n Dans p[0] : " + p[0] +
+                    "\n Dans p[1] : " + p[1]);*/
+
+                /*var titre_page = document.getElementById('titre').innerHTML;
+                alert(titre_page);*/
+
+                /*var p = document.querySelector('.para').innerHTML;
+                var t = document.querySelector('.para').textContent;
+                alert("les valeur recuperer par innerHTML est : " + p +
+                      "\n\n les valeur recuperer par textContent est : " + t);*/
+
+                var titre_page = document.title;
+                var page = document.body;
+                var lien = document.links;
+
+                alert("contenu titre_page : " + titre_page +
+                       "\n contenu page : " + page +
+                       "\n contenu lien : " + lien[0] );          
+
+                    
+                
+               
+            </script>
+            
+            
+    </body>  
+</html>

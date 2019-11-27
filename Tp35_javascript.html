@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Les evenements en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+
+        <h1 id="titre">Decovrerter le DOM HTML</h1>
+        
+        <p class="para">hover ici</a></p>
+        <p class="para">un Deuxieme <strong>Paragraphe</strong></p>
+        
+
+            <script>
+         
+         
+                var p1 = document.querySelector('p');
+
+                /*p1.addEventListener('click', Textchange);
+
+                function Textchange() {
+                    this.innerHTML = '<strong>Bravo !</strong>';
+                    this.style.color = 'green';
+                }*/
+
+//---------------------------------------------------------------------------                
+
+                /*p1.addEventListener('click', Message1);
+                p1.addEventListener('click', Message2);
+
+                function Message1() {
+                    alert('1ere message');
+                }
+                
+                function Message2() {
+                    alert('2eme message');
+                }*/
+
+                p1.addEventListener('mouseover', fonction1);
+                p1.addEventListener('mouseout', Reset1);
+                p1.addEventListener('mousedown', fonction2);
+                p1.addEventListener('mouseup', Reset2);
+
+
+                function fonction1() {
+                    this.innerHTML = 'Cliquer ici maintenant';
+                    this.style.backgroundColor = 'orange';
+
+                }
+
+                function Reset1() {
+                    this.innerHTML = 'hover ici';
+                    this.style.backgroundColor = '';
+                }
+                
+                function fonction2() {
+                    this.innerHTML = 'Bravo!';
+                    this.style.color = '#1d00ff';
+                    this.style.fontWeight = 'bold';
+                    this.style.fontSize = '20px';
+                }
+
+                function Reset2() {
+                    this.innerHTML = 'hover ici';
+                    this.style.color = '';
+                    this.style.fontWeight = '';
+                    this.style.fontSize = '';
+                }
+            </script>
+            
+            
+    </body>  
+</html>

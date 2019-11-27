@@ -1,0 +1,30 @@
+
+
+		
+2 * 1 = 2
+2 * 2 = 4
+2 * 3 = 6
+2 * 4 = 8
+2 * 5 = 10
+2 * 6 = 12
+2 * 7 = 14
+2 * 8 = 16
+2 * 9 = 18
+
+
+
+
+video 33 00:05:55
+
+- Javascript :
+
+* La methode push c'est pour ajouter les donners dans un table.
+* La methode pop c'est pour supprimer les donners a partir d'un table.
+* La methode unshift c'est pour ajouter les donners dans un dubet de la table.
+* La methode shift c'est pour supprimer les donners dans un dubet de la table.
+* La methode splice c'est pour ajouter des valeurs dans un millieu de la table.
+* La methode sort c'est pour trie des valeurs de la table.
+* La methode join() c'est pour cree un chaine de caractere avec des valeurs de la table.
+
+* La methode innerHTML qui recuperer tout dans la balise.
+*La methode textContent pour recuperer juste le texte qui dans la balise. 

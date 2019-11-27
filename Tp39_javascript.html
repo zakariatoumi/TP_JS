@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Les evenements en javascript</title>
+  <meta charset="utf-8">
+  <style>
+  div{
+      border: 1px solid tomato;
+      background-color: yellowgreen;
+      padding: 20px;
+      margin: 10px;
+  }
+  </style>
+ </head>
+    <body>
+
+        <h1 id="titre">Decovrerter le DOM HTML</h1>
+        <div id="div1">
+            <p id="p1">hover ici paragraphe</p>
+        </div>
+        
+
+            <script>
+               
+               var div1 = document.getElementById('div1');
+               var p1 = document.getElementById('p1');
+               
+
+               
+               //div1.addEventListener('click', Message);
+
+               div1.addEventListener('click', TexteD, true);
+               p1.addEventListener('click', TexteP, true);
+               
+               /*function Message(event) {
+                   this.innerHTML = 'Element declancheur : ' + event.target +
+                                    '<br> element portant l\'evenement : ' + event.currentTarget
+               };*/
+
+               /*function Message(e) {
+                this.innerHTML = 'type d\'evenement seclancheur : ' + e.type;
+               }*/
+
+               function TexteD(e) {
+                   //alert('Stop a la propagation');
+                   //e.stopPropagation();
+                   e.preventDefault();
+               }
+
+               function TexteP() {
+                   alert('La methode preventDefault n\'empeche pas la propagation');
+                  
+               }
+
+ 
+            </script>
+            
+            
+    </body>  
+</html>

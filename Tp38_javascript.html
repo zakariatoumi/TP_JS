@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Les evenements en javascript</title>
+  <meta charset="utf-8">
+  <style>
+  div{
+      border: 1px solid tomato;
+      padding: 20px;
+      margin: 10px;
+  }
+  </style>
+ </head>
+    <body>
+
+        <h1 id="titre">Decovrerter le DOM HTML</h1>
+        <div id="div1">
+            <p id="p1">hover ici <strong>paragraphe</strong></p>
+        </div>
+        
+
+            <script>
+               var body = document.body;
+               var div1 = document.getElementById('div1');
+               var p1 = document.getElementById('p1');
+               var strong = document.querySelector('strong');
+
+               p1.addEventListener('click',CP1, true);
+               strong.addEventListener('click', CS, true);
+
+               function CP1() {
+                   alert('capture paragraphe');
+               };
+
+               function CS() {
+                   alert('capture strong');
+               };
+
+               div1.addEventListener('click', BD1);
+               body.addEventListener('click', BB);
+
+               function BD1() {
+                   alert("afficher div");
+               };
+
+               function BB() {
+                   alert("afficher body");
+               };
+               
+
+
+
+               
+            </script>
+            
+            
+    </body>  
+</html>

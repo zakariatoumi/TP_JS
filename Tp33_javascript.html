@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Le DOM en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+
+            <h1 id="gros_titre">Le DOM en javascript</h1>
+            <div>
+            <p class="para">Un premier paragraphe</p>
+            <p class="para">Un deuxieme <strong>paragraphe</strong></p>
+            </div>
+
+            <script>
+                  
+           /*var p = document.querySelector('.para');
+           var div = p.parentNode;
+
+           div.style.color = 'yellow';*/
+
+//----------------------------------------------------------------------------
+
+                /*var b = document.body;
+
+                var div = b.childNodes[3];
+
+                var p1 = div.childNodes[1];
+
+                var texte = p1.childNodes[0].nodeValue;
+
+                alert(texte);*/
+
+//-------------------------------------------------------------------------------
+
+                /*var p2 = document.querySelectorAll('.para')[1];
+
+                var premier = p2.firstChild;
+                var dernier = p2.lastChild;
+
+                var inner1 = premier.nodeValue;
+                var inner2 = dernier.innerHTML;
+                var inner3 = dernier.textContent;
+                var inner4 = dernier.childNodes[0].nodeValue;
+
+                alert('Contenu de inner1 : ' + inner1 +
+                        '\nContenu de inner2 : ' + inner2 + 
+                        '\nContenu de inner3 : ' + inner3 + 
+                        '\nContenu de inner4 : ' + inner4);*/
+
+//-----------------------------------------------------------------------------------                        
+
+                var titre = document.getElementById('gros_titre');
+                var div = titre.nextSibling.nextSibling;
+                
+                div.innerHTML = '<div>La lalalalal</div>'
+            </script>
+            
+            
+    </body>  
+</html>

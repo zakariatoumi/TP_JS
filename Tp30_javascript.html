@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <title>Decovrerter le DOM HTML</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1 id="titre">Decovrerter le DOM HTML</h1>
+            <p class="para">Du texte et <a href="https://www.youtube.com/?gl=MA&hl=fr">Un lien</a></p>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum hic</p>
+
+            <script>
+
+                var newPara = document.createElement('p');
+                newPara.id = 'nouvelle';
+
+                var texte = document.createTextNode('Insere');
+                newPara.appendChild(texte);
+                /*document.body.appendChild(newPara);*/
+
+                var para1 = document.querySelector('.para');
+                document.body.insertBefore(newPara, para1);
+              
+            </script>
+            
+            
+    </body>  
+</html>

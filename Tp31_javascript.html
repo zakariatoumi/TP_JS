@@ -1,0 +1,30 @@
+<html>
+ <head>
+  <title>Decovrerter le DOM HTML</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+            <h1 id="titre">Decovrerter le DOM HTML</h1>
+            <p class="para">Du texte et <a href="https://www.youtube.com/?gl=MA&hl=fr">Un lien</a></p>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum hic</p>
+
+            <script>
+
+                var titre = document.getElementById('titre');
+                var parent = document.body;
+
+                /*parent.removeChild(titre);*/
+
+                var nouveauTitre = document.createElement('h2');
+                nouveauTitre.id = 'titre_moyen';
+                nouveauTitre.innerHTML = 'Titre modifier en js';
+                parent.replaceChild(nouveauTitre, titre);
+
+                
+              
+            </script>
+            
+            
+    </body>  
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Le DOM en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+
+           <!--<p onclick="alert('Bravo')">Cliquez-moi, Cliquez-moi!</p>
+
+           <p onclick="this.textContent = 'Merci !'">Cliquez-moi, Cliquez-moi!</p>
+
+           <p>Deuxieme paragrapha</p>-->
+
+           <p>Premier paragraphe</p>
+           <p>Deuxieme paragraphe</p>
+
+            <script>
+         
+                var p1 = document.querySelector('p');
+
+                /*p1.onclick = function () {
+                    this.innerHTML = '<strong> Bravo ! </strong>';
+                    p1.style.color = 'red';
+                    p1.style.fontSize = '60px';
+                };*/
+
+                p1.onclick = bravo;
+
+                function bravo() {
+                    this.innerHTML = '<strong> Bravo ! </strong>';
+                    p1.style.color = 'red';
+                    p1.style.fontSize = '60px';
+                }
+
+                
+            </script>
+            
+            
+    </body>  
+</html>

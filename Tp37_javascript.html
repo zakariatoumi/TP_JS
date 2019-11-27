@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Les evenements en javascript</title>
+  <meta charset="utf-8">
+  <style>
+  div{
+      border: 1px solid tomato;
+      padding: 20px;
+      margin: 10px;
+  }
+  </style>
+ </head>
+    <body>
+
+        <h1 id="titre">Decovrerter le DOM HTML</h1>
+        <div id="div1">
+            <p id="p1">hover ici</a></p>
+        </div>
+        <div id="div2">   
+            <p id="p2">un Deuxieme Paragraphe</p>
+        </div>
+
+            <script>
+               
+               var div1 = document.getElementById('div1');
+               var p1 = document.getElementById('p1');
+               var div2 = document.getElementById('div2');
+               var p2 = document.getElementById('p2');
+
+               // la premier message paragraphe et div
+
+               div1.addEventListener('click', MessageDiv1);
+               p1.addEventListener('click', MessageP1);
+
+               function MessageDiv1() {
+                   alert('Message div 1');
+               }
+
+               function MessageP1() {
+                   alert('Message p 1')
+               }
+
+               // la Deuxieme message paragraphe et div
+
+               div2.addEventListener('click', MessageDiv2,true);
+               p2.addEventListener('click', MessageP2,true);
+
+               function MessageDiv2() {
+                   alert('Message div 2');
+               }
+
+               function MessageP2() {
+                   alert('Message p 2');
+               }
+
+               
+            </script>
+            
+            
+    </body>  
+</html>

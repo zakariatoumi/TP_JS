@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Les evenements en javascript</title>
+  <meta charset="utf-8">
+  
+ </head>
+    <body>
+
+        <h1 id="titre">Decovrerter le DOM HTML</h1>
+        <div id="div1">
+            <p>hover ici</a></p>
+            <p>un Deuxieme <strong>Paragraphe</strong></p>
+        </div>
+
+            <script>
+                
+                var div = document.getElementById('div1');
+                var p1 = document.querySelector('p');
+
+                div.addEventListener('click', MessageDiv);
+                p1.addEventListener('click', MessageP);
+
+                function MessageDiv() {
+                    alert('Message de div');
+                }
+
+                
+                function MessageP() {
+                    alert('Message de paragraphe');
+                }
+            </script>
+            
+            
+    </body>  
+</html>
